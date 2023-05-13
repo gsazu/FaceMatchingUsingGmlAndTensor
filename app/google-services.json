@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "920684706101",
+    "project_id": "frecandroid",
+    "storage_bucket": "frecandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920684706101:android:e3c3448daab8d225cb747c",
+        "android_client_info": {
+          "package_name": "com.app.googlefacemeshdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920684706101-ihc8p6md0n2th1jg8g7diuohs0m9cf35.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.googlefacemeshdemo",
+            "certificate_hash": "1d2fc1eae641be714948eae2bc553c9b98856a64"
+          }
+        },
+        {
+          "client_id": "920684706101-m2322e3deg681jj01p3rtjl7hd1lockd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTgoIs4BlsjvBYhI6uLmFf7ffTHKyDXDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920684706101-m2322e3deg681jj01p3rtjl7hd1lockd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

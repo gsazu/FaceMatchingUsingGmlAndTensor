@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.app.googlefacemeshdemo.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/upload_image"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/iv_second"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/upload_image"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_pickImage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="10dp"
+            android:text="Pick Image 1"/>
+
+        <Button
+            android:id="@+id/btn_pickImage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:text="Pick Image 2"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
