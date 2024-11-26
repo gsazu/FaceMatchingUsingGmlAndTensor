@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.app.googlefacemeshdemo'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.app.googlefacemeshdemo"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -57,7 +57,7 @@ dependencies {
     // don't require this additional model):
 //    implementation 'com.google.firebase:firebase-ml-vision-face-model:20.0.2'
     api 'org.tensorflow:tensorflow-lite-gpu:2.9.0'
-    implementation 'com.google.mlkit:face-detection:16.1.5'
+    implementation 'com.google.mlkit:face-detection:16.1.7'
     api 'org.tensorflow:tensorflow-lite-task-vision:0.4.3'
     implementation 'org.tensorflow:tensorflow-lite:2.10.0'
 
@@ -70,7 +70,7 @@ dependencies {
     implementation "androidx.camera:camera-view:${camerax_version}"
     implementation "androidx.camera:camera-extensions:${camerax_version}"
 
-    implementation 'com.google.mlkit:face-mesh-detection:16.0.0-beta1'
+    implementation 'com.google.mlkit:face-mesh-detection:16.0.0-beta3'
 }
 
 apply plugin: 'com.google.gms.google-services'
